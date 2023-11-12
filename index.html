@@ -1,38 +1,23 @@
 <!DOCTYPE html>
+
+<!-- CSS -->
 <style>
+
+@media (prefers-color-scheme: dark) {
 	* {
 		color: white;
 		background-color: black;
 	}
+}
 
-	h1 {
-		margin: 0;
-	}
+body {
+	max-width: 52ch;
+	margin: auto;
+}
 
-	header {
-		padding: 4ch 12ch;
-	}
-
-	body {
-		max-width: 70ch;
-		margin: auto;
-		padding: 0rem 1rem;
-	}
-
-	article {
-		padding: 4ch 12ch;
-	}
-
-	article, article * {
-		color: black;
-		background-color: white;
-	}
-
-	p {
-		margin-top: 0;
-	}
 </style>
 
+<!-- HTML -->
 <html>
 
 <head>
@@ -52,17 +37,3 @@
 </body>
 
 </html>
-
-<script>
-
-function downloadURI(uri, name) {
-	var link = document.createElement("a");
-	link.download = name;
-	link.href = uri;
-	document.body.appendChild(link);
-	link.click();
-	document.body.removeChild(link);
-	delete link;
-}
-
-</script>
