@@ -1,3 +1,12 @@
-body {
-	width: 50%;
+@media (prefers-color-scheme: dark) {
+	* {
+		color: white;
+		background-color: black;
+	}
+}
+
+html {
+	max-width: 52ch;
+	margin-left: 1ch;
+	margin-right: 1ch;
 }
